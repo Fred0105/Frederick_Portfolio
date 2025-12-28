@@ -1,0 +1,88 @@
+/* src/components/Skills.css */
+
+.skills-section {
+    padding: 100px 24px;
+    background-color: #f8fafc; /* Sedikit abu-abu agar kontras dengan Hero */
+    border-top: 1px solid #e2e8f0;
+  }
+  
+  .skills-container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .skills-header {
+    text-align: center;
+    margin-bottom: 64px;
+  }
+  
+  .skills-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 16px;
+  }
+  
+  .skills-subtitle {
+    font-size: 1.1rem;
+    color: #64748b;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  /* --- GRID LAYOUT --- */
+  .skills-grid {
+    display: grid;
+    /* Membuat kolom otomatis: Di HP 1 kolom, di Laptop 3 kolom */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 32px;
+  }
+  
+  /* --- KARTU SKILL --- */
+  .skill-card {
+    background: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    padding: 32px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Efek Hover: Naik sedikit */
+  .skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+    border-color: #cbd5e1;
+  }
+  
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #f1f5f9;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #0f172a;
+  }
+  
+  /* --- TAGS / LIST SKILL --- */
+  .skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .skill-tag {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #475569;
+    background-color: #f1f5f9;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid transparent;
+  }

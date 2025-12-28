@@ -1,0 +1,120 @@
+/* src/components/Hero.css */
+
+.hero-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 24px 80px; /* Padding atas lebih besar agar aman dari navbar */
+    background-color: #ffffff;
+  }
+  
+  /* Label Kecil (PORTFOLIO) */
+  .hero-label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #64748b;
+    letter-spacing: 0.15em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    display: inline-block;
+  }
+  
+  /* Judul Utama (Nama) */
+  .hero-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 4rem;
+    font-weight: 800;
+    color: #0f172a;
+    margin-bottom: 16px;
+    line-height: 1.1;
+    letter-spacing: -0.03em;
+  }
+  
+  /* Sub-judul (Role) */
+  .hero-subtitle {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #334155;
+    margin-bottom: 32px;
+    line-height: 1.4;
+  }
+  
+  /* Container Deskripsi */
+  .hero-desc-container {
+    max-width: 700px;
+    margin-bottom: 48px;
+  }
+  
+  .hero-desc {
+    font-size: 1.15rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 16px;
+  }
+  
+  .hero-desc strong {
+    color: #0f172a;
+    font-weight: 600;
+  }
+  
+  /* --- TOMBOL --- */
+  .hero-buttons {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap; /* Agar tombol turun ke bawah kalau layar sempit */
+    justify-content: center;
+  }
+  
+  /* Tombol Hitam Utama */
+  .btn-primary {
+    background-color: #0f172a;
+    color: white;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: transform 0.2s;
+    border: 1px solid #0f172a;
+  }
+  
+  /* Tombol Putih/Outline */
+  .btn-outline {
+    background-color: transparent;
+    color: #0f172a;
+    border: 1px solid #e2e8f0;
+    padding: 14px 32px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  
+  /* KHUSUS TOMBOL CV (Agar Icon Rapi) */
+  .btn-icon {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px; /* Jarak antara teks "Download CV" dan Icon */
+  }
+  
+  /* Efek Hover */
+  .btn-primary:hover, .btn-outline:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+
+  }
+  
+  .btn-outline:hover {
+    background-color: #f8fafc;
+    border-color: #cbd5e1;
+  }
+  
+  /* Responsif untuk HP */
+  @media (max-width: 768px) {
+    .hero-title { font-size: 2.5rem; }
+    .hero-subtitle { font-size: 1.25rem; }
+    .hero-buttons { flex-direction: column; width: 100%; }
+    .btn-primary, .btn-outline { width: 100%; justify-content: center; }
+  }

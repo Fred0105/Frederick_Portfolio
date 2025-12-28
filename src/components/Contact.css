@@ -1,0 +1,92 @@
+/* src/components/Contact.css */
+
+.contact-section {
+    padding: 100px 24px;
+    background-color: #f8fafc; /* Abu-abu muda untuk penutup halaman */
+    border-top: 1px solid #e2e8f0;
+  }
+  
+  .contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Membagi 2 kolom (50:50) */
+    gap: 64px;
+    align-items: center;
+  }
+  
+  /* BAGIAN KIRI (Teks) */
+  .contact-left {
+    padding-right: 20px;
+  }
+  
+  .contact-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 24px;
+    letter-spacing: -0.03em;
+    line-height: 1.1;
+  }
+  
+  .contact-desc {
+    font-size: 1.1rem;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 32px;
+  }
+  
+  /* BAGIAN KANAN (Links) */
+  .contact-right {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .contact-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 20px 24px;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+  }
+  
+  /* Efek Hover: Kartu naik & border jadi biru */
+  .contact-card:hover {
+    transform: translateY(-3px);
+    border-color: #94a3b8;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.05);
+  }
+  
+  .contact-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  
+  .contact-label {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #0f172a;
+  }
+  
+  .contact-detail {
+    font-size: 0.9rem;
+    color: #64748b;
+  }
+  
+  /* Responsif Mobile */
+  @media (max-width: 768px) {
+    .contact-container {
+      grid-template-columns: 1fr; /* Jadi 1 kolom vertikal */
+      gap: 48px;
+    }
+    .contact-title {
+      font-size: 2.5rem;
+    }
+  }
