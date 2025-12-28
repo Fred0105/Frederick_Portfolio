@@ -49,7 +49,7 @@ const Projects = () => {
         <div className="projects-header">
           <h2 className="projects-title">Selected Projects</h2>
           <p className="projects-subtitle">
-            A showcase of my research and technical projects in quantitative finance and AI.
+            Projects showcasing my experience in software and AI-related development.
           </p>
         </div>
 
