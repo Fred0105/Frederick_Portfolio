@@ -21,7 +21,7 @@ const Contact = () => {
         <div className="contact-right">
           
           {/* 1. Email */}
-          <a href="mailto:frederick_malcolm30@gmail.com" className="contact-card">
+          <a href="mailto:frederick.malcolm30@gmail.com" className="contact-card">
             <div className="contact-info">
               <Mail size={24} color="#0f172a" />
               <div>
@@ -56,7 +56,7 @@ const Contact = () => {
 
           {/* 4. WhatsApp */}
           {/* Perbaikan: Ganti nomer HP di bawah ini (format 628...) */}
-          <a href="https://wa.me/6281234567890" target="_blank" rel="noopener noreferrer" className="contact-card">
+          <a href="https://wa.me/628117767177" target="_blank" rel="noopener noreferrer" className="contact-card">
             <div className="contact-info">
               {/* Perbaikan: Gunakan MessageCircle karena icon Whatsapp tidak ada di Lucide */}
               <MessageCircle size={24} color="#25D366" />
