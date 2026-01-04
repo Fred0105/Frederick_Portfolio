@@ -27,7 +27,7 @@ const Contact = () => {
               <div>
                 <div className="contact-label">Email Me</div>
                 {/* Perbaikan: Menampilkan email asli */}
-                <div className="contact-detail">frederick_malcolm30@gmail.com</div>
+                <div className="contact-detail">frederick.malcolm30@gmail.com</div>
               </div>
             </div>
             <ArrowUpRight size={20} color="#94a3b8" />
